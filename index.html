@@ -1,30 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Automation Dashboard</title>
+    <title>Automation Dashboard - Home</title>
+    <script src="theme-toggle.js" defer></script>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; }
-        header { background-color: #333; color: #fff; padding: 20px; text-align: center; }
-        section { margin-bottom: 20px; padding: 20px; border: 1px solid #ccc; border-radius: 4px; }
-        h2 { margin-top: 0; }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background: #222; color: #fff; padding: 20px; display:flex; align-items:center; justify-content:space-between; }
+        nav a { color: #fff; margin-right: 15px; text-decoration: none; }
+        main { padding: 20px; }
+        section { margin-bottom: 20px; padding: 20px; border: 1px solid #ccc; border-radius: 4px; background:#f7f7f7; }
+        #theme-toggle { padding: 8px 12px; cursor: pointer; }
     </style>
 </head>
 <body>
     <header>
-        <h1>Automation Dashboard</h1>
+        <div>
+            <h1>Automation Dashboard</h1>
+            <nav>
+                <a href="index.html">Dashboard</a>
+                <a href="actions-monitor.html">Actions Monitor</a>
+                <a href="system-map.html">System Map</a>
+                <a href="settings.html">Settings</a>
+                <a href="login.html">Login</a>
+            </nav>
+        </div>
+        <button id="theme-toggle">Toggle Theme</button>
     </header>
-    <section id="workflow-status">
-        <h2>Workflow Status</h2>
-        <p>Placeholder for workflow status.</p>
-    </section>
-    <section id="system-health">
-        <h2>System Health</h2>
-        <p>Placeholder for system health metrics.</p>
-    </section>
-    <section id="deployment-overview">
-        <h2>Deployment Overview</h2>
-        <p>Placeholder for deployment overview details.</p>
-    </section>
+    <main>
+        <section>
+            <h2>Overview</h2>
+            <p>This is the futuristic dashboard home page. Content such as workflow status, system health, and deployment overview will appear here.</p>
+        </section>
+    </main>
 </body>
 </html>
