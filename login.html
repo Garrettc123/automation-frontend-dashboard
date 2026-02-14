@@ -1,11 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Login Page</title>
+    <title>Automation Dashboard - Login</title>
+    <script src="theme-toggle.js" defer></script>
+    <style>
+        body { font-family: Arial, sans-serif; margin:0; padding:0; display:flex; justify-content:center; align-items:center; height:100vh; background:#f5f5f5; }
+        form { background:#fff; padding:20px; border:1px solid #ccc; border-radius:4px; width:300px; }
+        header { margin-bottom:20px; text-align:center; }
+        label { display:block; margin-bottom:10px; }
+        input[type="text"], input[type="password"] { width:100%; padding:8px; margin-bottom:10px; }
+        button { width:100%; padding:10px; }
+    </style>
 </head>
 <body>
-    <h1>Login</h1>
-    <p>Placeholder for login/authentication form.</p>
+    <form>
+        <header>
+            <h1>Login</h1>
+        </header>
+        <label>Username<input type="text" placeholder="Enter username"></label>
+        <label>Password<input type="password" placeholder="Enter password"></label>
+        <button type="button">Login (Placeholder)</button>
+    </form>
 </body>
 </html>
