@@ -1,11 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>GitHub Actions Monitor</title>
+    <title>Automation Dashboard - Actions Monitor</title>
+    <script src="theme-toggle.js" defer></script>
+    <style>
+        body { font-family: Arial, sans-serif; margin:0; padding:0; }
+        header { background:#222; color:#fff; padding:20px; display:flex; align-items:center; justify-content:space-between; }
+        nav a { color:#fff; margin-right:15px; text-decoration:none; }
+        main { padding:20px; }
+        #theme-toggle { padding:8px 12px; cursor:pointer; }
+        section { background:#f7f7f7; border:1px solid #ccc; border-radius:4px; padding:20px; }
+    </style>
 </head>
 <body>
-    <h1>Real-Time GitHub Actions Monitor</h1>
-    <p>Placeholder for real-time GitHub Actions status and logs.</p>
+    <header>
+        <div>
+            <h1>Actions Monitor</h1>
+            <nav>
+                <a href="index.html">Dashboard</a>
+                <a href="actions-monitor.html">Actions Monitor</a>
+                <a href="system-map.html">System Map</a>
+                <a href="settings.html">Settings</a>
+                <a href="login.html">Login</a>
+            </nav>
+        </div>
+        <button id="theme-toggle">Toggle Theme</button>
+    </header>
+    <main>
+        <section>
+            <h2>Real-Time Actions Monitor</h2>
+            <p>This page will display real-time status and logs for automation actions.</p>
+        </section>
+    </main>
 </body>
 </html>
